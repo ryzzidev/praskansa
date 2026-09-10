@@ -173,6 +173,12 @@ section {
 }
 
 /* --- DEWAN AMBALAN --- */
+.container-pembina {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .grid-dewan {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -222,6 +228,22 @@ section {
     letter-spacing: 0.5px;
 }
 
+/* Tampilan Khusus Pembina */
+.card-dewan.pembina {
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid var(--primary-brown);
+    background: linear-gradient(135deg, #ffffff 0%, #f7f0e6 100%);
+    box-shadow: 0 10px 25px rgba(74, 46, 22, 0.15);
+}
+
+.card-dewan.pembina .avatar {
+    background-color: var(--primary-brown);
+    color: var(--pure-white);
+    border-color: var(--primary-brown);
+}
+
+/* Tampilan Khusus Pradana */
 .card-dewan.pradana {
     border: 2px solid var(--accent-brown);
     background: linear-gradient(to bottom, #ffffff, #fdfbf7);
